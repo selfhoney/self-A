@@ -1,0 +1,26 @@
+/* original spacer */
+.honey-spacer {
+  display: block;
+  position: relative;
+  clear: both;
+  margin: 0;
+  padding: 0;
+  border: none; }
+  .honey-spacer-xxxlg {
+    height: 20rem; }
+  .honey-spacer-xxlg {
+    height: 15rem; }
+  .honey-spacer-xlg {
+    height: 10rem; }
+  .honey-spacer-lg {
+    height: 7rem; }
+  .honey-spacer-md {
+    height: 5rem; }
+  .honey-spacer-sm {
+    height: 3rem; }
+  .honey-spacerxs {
+    height: 2rem; }
+  .honey-spacer-xxs {
+    height: 1rem; }
+  .honey-spacer-xxxs {
+    height: .5rem; }
