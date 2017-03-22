@@ -1,0 +1,25 @@
+/* hover style */
+// $time = 0.0s  $up = 0.0 $opacity = 0.0
+
+// hover up
+@mixin hover_up($time, $up) {
+	-webkit-transition: -webkit-transform $time linear;
+	-ms-transition: -ms-transform $time linear;
+	transition: transform $time linear;
+	&:hover {
+		-webkit-transform: scale($up);
+		-ms-transform: scale($up);
+        transform: scale($up);
+	}
+}
+
+// hover on
+@mixin hover_on($time, $opacity) {
+    &:hover {
+        -webkit-transition: ($time);
+		-ms-transition: ($time);
+        transition: ($time);
+        opacity: ($opacity);
+    }
+}
+

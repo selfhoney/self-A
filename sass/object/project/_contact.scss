@@ -1,0 +1,123 @@
+/* contact */
+
+.wpcf7 {
+    margin: {
+        bottom: 30px;
+    }
+    padding: 0;
+    background: #afafaf;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    p {
+        margin: 0;
+        padding: 20px 20px 0 20px;
+        font: {
+            size: 12px
+        }
+    }
+    input,
+    textarea {
+        padding: 8px;
+        font: {
+            size: 14px;
+        }
+        border: 1px solid #ccc;
+    }
+    textarea {
+        width: 97.5%;
+        height: 300px;
+    }
+    &-submit {
+        display: block;
+        width: 200px;
+        height: 45px;
+        margin: 0 auto;
+        background: #333;
+        border: 1px solid #666;
+        border-radius: 5px;
+        font: {
+            weight: bold;
+            size: 14px;
+        }
+        color: #fff;
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5),
+        inset 0px 32px 0px -12px #808080;
+        &:hover {
+            background: #006080;
+            border: 1px solid #006080;
+            box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5), inset 0px 48px 0px 0px #007ea8;
+        }
+        &:active {
+            position: relative;
+            bottom: -2px;
+            box-shadow: none;
+        }
+    }
+    input:focus,
+    textarea:focus {
+        border: 1px solid #009de1;
+    }
+    &-captchac {
+        border: 1px solid #ccc;
+    }
+    // エラー個所をわかりやすく表示 
+    &-not {
+        &-valid {
+            background: #fb6c1f;
+            &-tip {
+                font: {
+                    size: 80%;
+                }
+            }
+        }
+    }
+    &-response {
+        &-output {
+            margin: 10px 0 0 0;
+            padding: 8px 35px 8px 14px;
+            border-radius: 4px;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        }
+    }
+    &-validation {
+        &-errors {
+            background: #f2dede;
+            border: 1px solid #eed3d7;
+            color: #b94a48
+        }
+    }
+    &-mail {
+        -sent {
+            &-ok {
+                background: #d9edf7;
+                border: 1px solid #bce8f1;
+                color: #3a87ad;
+            }
+        }
+    }
+		// 768px-
+		input {
+			@include media(min-sm) {
+				&[name="tel-no"],
+				&[name="zip"] {
+					width: 40%;
+				}
+			}
+		}
+}
+
+/* 必須赤色表示 */
+
+.required {
+    color: #f00;
+}
+
+/* 任意緑色表示 */
+
+.any {
+    color: #080;
+}
+
+
+
+

@@ -1,0 +1,81 @@
+/* work */
+
+.work {
+	&.column {
+		&-main {
+			margin: {
+				bottom: 2em;
+			}
+		}
+	}
+	& .column {
+		&-text {
+			line-height: 1.8;
+		}
+	}
+}
+
+
+.column {
+	&-text {
+		& ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			color: #00f;
+			
+		}
+	}
+	&-img.data {
+		margin: {
+			bottom: 2em;
+		}
+	}
+}
+
+
+
+.appeal {
+	&-text {
+		font: {
+			weight: 600;
+			size: 1.5em;
+		}
+		color: #f9c;
+	}
+}
+
+.table {
+	&-menu_1 {
+		& td {
+			width: 25em;
+			padding: .75em .5em;
+			text-align: center;
+			&:nth-child(1) {
+				color: #f07692;
+			}
+		}
+	}
+	&-menu_2 {
+		td {
+			width: 10em;
+			padding: .75em .5em;
+			text-align: center;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

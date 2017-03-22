@@ -1,0 +1,68 @@
+/*
+Theme Name:agent_tcd033_Child
+Template:agent_tcd033
+Version:3.0
+*/
+
+
+/* ============================== 
+   Foundation
+   ============================== */
+
+// variables
+@import "foundation/variables";
+// fonts
+@import "foundation/_NotoSansCJKjp";
+// mixin
+@import "foundation/mixin/_flexbox"; // flexbox
+@import "foundation/mixin/_breakpoint"; // Media Queries
+@import "foundation/mixin/_img_size"; //images size
+@import "foundation/mixin/_hover_style"; // hover style
+// base css
+@import "foundation/_base";
+@import "foundation/_spacer"; // hight spacer
+
+/* ============================== 
+   layout
+   ============================== */
+
+// main layout
+@import "layout/_layouts";
+
+ // base layout
+
+/* ============================== 
+   object
+   ============================== */
+
+
+/* ------------------------------
+   component
+   ------------------------------ */
+
+//button
+@import "object/component/_buttons"; // buttons
+@import "object/component/_search"; // search menu
+@import "object/component/_lead_text"; // lead  text 
+@import "object/component/_office_address"; // office layout 
+@import "object/component/_page_top"; // page top button
+
+/* ------------------------------
+   project
+   ------------------------------ */
+
+@import "object/project/_about"; // about
+@import "object/project/_office_group"; // office group
+@import "object/project/_flowchart"; // flowchart 
+@import "object/project/_question"; // question layout
+@import "object/project/_work"; // work
+@import "object/project/_privacypolicy"; // privacypolicy
+@import "object/project/_office-map"; //oofce map
+@import "object/project/_contact";
+@import "object/project/_arrow_chart";
+
+
+/* ------------------------------
+   utility
+   ------------------------------ */
+@import "object/utility/_flowup";

@@ -1,0 +1,89 @@
+
+
+
+$base-font_n: 'NotoSansCJKjp';
+$woff: format('woff');
+$truetype: format('truetype');
+
+
+@mixin NotoSansCJKjp-Thin {
+	@font-face {
+		font: {
+		family: '#{$base-font_n}-Thin';
+	}
+	src: url("../fonts/#{$base-font_n}/#{$base-font_n}-Thin.woff") $woff,
+	url("../fonts/#{$base-font_n}/#{$base-font_n}-Thin.ttf") $truetype;
+	}
+}
+
+
+@mixin NotoSansCJKjp-Light {
+	@font-face {
+		font: {
+		family: '#{$base-font_n}-Light';
+	}
+	src: url("../fonts/#{$base-font_n}/#{$base-font_n}-Light.woff") $woff,
+	url("../fonts/#{$base-font_n}/#{$base-font_n}-Light.ttf") $truetype;
+	}
+}
+
+
+@mixin NotoSansCJKjp-DemiLight {
+	@font-face {
+		font: {
+		family: '#{$base-font_n}-DemiLight';
+	}
+	src: url("../fonts/#{$base-font_n}/#{$base-font_n}-DemiLight.woff") $woff,
+	url("../fonts/#{$base-font_n}/#{$base-font_n}-DemiLight.ttf") $truetype;
+	}
+}
+
+
+@mixin NotoSansCJKjp-Regular {
+	@font-face {
+		font: {
+		family: '#{$base-font_n}-Regular';
+	}
+	src: url("../fonts/#{$base-font_n}/#{$base-font_n}-Regular.woff") $woff,
+	url("../fonts/#{$base-font_n}/#{$base-font_n}-Regular.ttf") $truetype;
+	}
+}
+
+
+@mixin NotoSansCJKjp-Medium {
+	@font-face {
+		font: {
+		family: '#{$base-font_n}-Medium';
+	}
+	src: url("../fonts/#{$base-font_n}/#{$base-font_n}-Medium.woff") $woff,
+	url("../fonts/#{$base-font_n}/#{$base-font_n}-Medium.ttf") $truetype;
+	}
+}
+
+
+@mixin NotoSansCJKjp-Bold{
+	@font-face {
+		font: {
+		family: '#{$base-font_n}-Bold';
+	}
+	src: url("../fonts/#{$base-font_n}/#{$base-font_n}-Bold.woff") $woff,
+	url("../fonts/#{$base-font_n}/#{$base-font_n}-Bold.ttf") $truetype;
+	}
+}
+
+
+@mixin NotoSansCJKjp-Black {
+	@font-face {
+		font: {
+		family: '#{$base-font_n}-Black';
+	}
+	src: url("../fonts/#{$base-font_n}/#{$base-font_n}-Black.woff") $woff,
+	url("../fonts/#{$base-font_n}/#{$base-font_n}-Black.ttf") $truetype;
+	}
+}
+
+
+
+
+
+

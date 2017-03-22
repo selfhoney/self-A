@@ -1,0 +1,11 @@
+/* privacypolicy */
+.privacypolicy {
+    &-box {
+        & dt {
+            margin: {
+                top: 2em;
+                bottom: .5em;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+/* office layout */
+
+.office {
+	&-name {
+		color: #f16082;
+	}
+    &-address {
+        & dt,
+        & dd {
+            display: inline;
+            margin: 0;
+        }
+        & dt,
+        & dd {
+            font-weight: 500;
+        }
+        & dd + dt::before {
+            content: "\A";
+            white-space: pre;
+        }
+    }
+}
+
+
+			

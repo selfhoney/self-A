@@ -1,0 +1,70 @@
+/* button */
+
+.btn {
+    // read more button
+    &-read {
+        @include hover_on(0.7s, 0.7);
+    }
+    &-layout {
+        display: inline-block;
+        background: $color-main-btn;
+        color: #fff;
+        &:hover {
+            text-decoration: none;
+        }
+        padding: .5em 1em;
+        font: {
+            weight: 500;
+            size: 1em;
+        }
+    }
+    // web site button
+    &-web {
+        @include inline-flex;
+        @include justify-center;
+        @include align-center;
+        width: 8.75em;
+        height: 2.125em;
+        margin: {
+            right: 1em;
+        }
+        background: $color-main-btn;
+        @include hover_on(0.7s, 0.7);
+        &-link {
+            display: inline-block;
+            padding: .5em .2em;
+            color: #fff;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    // blog site button
+    &-blog {
+        @extend .btn-web;
+        &-link {
+            @extend .btn-web-link;
+            padding: {
+                right: 3em;
+                left: 3em;
+            }
+        }
+    }
+    // contact button
+    &-contact {
+        margin: {
+            top: 1.5em;
+            bottom: 3em;
+        }
+        @include hover_on(0.7s, 0.7);
+        &-size {
+            @extend .btn-layout;
+            padding: 1em 2em;
+            border-radius: 5px;
+            font: {
+                weight: 600;
+                size: 1.5em
+            }
+        }
+    }
+}

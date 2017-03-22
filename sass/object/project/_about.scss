@@ -1,0 +1,31 @@
+/* about */
+
+dl {
+    &.about {
+        &-office {
+            & dt {
+                float: left;
+                width: 7em;
+                font: {
+                    weight: 500
+                }
+            }
+            & dd {
+                margin: {
+                    left: 7em;
+                }
+            }
+            @include media(min-sm) {
+                dt,
+                dd {
+                    margin: {
+                        bottom: 1em;
+                    }
+                    font: {
+                        size: 1.5em
+                    }
+                }
+            }
+        }
+    }
+}

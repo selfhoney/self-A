@@ -1,0 +1,52 @@
+/* layouts */
+
+.l-column {
+    @include media(min-md) {
+        width: $main-width;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+}
+
+.l-row {
+    @include display-flex;
+    @include justify-between;
+    margin: 0 auto 100px auto;
+    @include media(max-xs) {
+        @include direction-column;
+        @include align-center;
+    }
+}
+
+.l-half {
+    &-column {
+        @include flex(1 0 0);
+        max-width: ($main-width / 2);
+    }
+}
+
+.column {
+    &-sub {
+        @include display-flex;
+        @include justify-end;
+    // 画像のサイズを4:3に調整
+        & > .column {
+            &-img {
+                @include img_size;
+                &[src*="handcontrol.jpg"] {
+                    @include img_size(135, 372);
+                }
+            }
+        }
+    }
+}
+
+.l-center {
+    @include display-flex;
+    @include justify-center;
+    &-column {
+        @include display-flex;
+        @include direction-column;
+        @include align-center;
+    }
+}

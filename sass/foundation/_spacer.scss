@@ -1,0 +1,47 @@
+/* original spacer */
+
+.selfa {
+    &-spacer {
+        margin: 0;
+        padding: 0;
+        &-xlg {
+            height: 10rem;
+        }
+        &-lg {
+            height: 7rem;
+        }
+        &-md {
+            height: 5rem;
+        }
+        &-sm {
+            height: 3rem;
+        }
+        &xs {
+            height: 2rem;
+        }
+        &-xxs {
+            height: 1rem;
+        }
+        &-xxxs {
+            height: .5rem;
+        }
+		@include media(max-xs) {
+			&-xlg {
+                height: 5rem;
+            }
+            &-lg {
+                height: 3rem;
+            }
+            &-md {
+                height: 2rem;
+            }
+            &-sm {
+                height: 1rem;
+            }
+            &-xs {
+                height: 1rem;
+            }
+		}
+    }
+}
+

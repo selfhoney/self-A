@@ -1,0 +1,62 @@
+// breakpoint
+
+$max-xs: 47.9375em; // 767px
+$max-sm: 61.9375em; // 991px
+$max-md: 74.9375em; // 1199px
+$min-sm: 48em; // 768px
+$min-md: 62em; // 992px
+$min-lg: 75em; // 1200px
+
+@mixin media($media-width) {
+    @if $media-width == max-xs {
+        @media only screen and (max-width: $max-xs) {
+            @content;
+        }
+    }
+    @else if $media-width == max-sm {
+        @media only screen and (max-width: $max-sm) {
+            @content;
+        }
+    }
+    @else if $media-width == max-md {
+        @media only screen and (max-width: $max-md) {
+            @content;
+        }
+    }
+    @else if $media-width == min-sm {
+        @media only screen and (min-width: $min-sm) {
+            @content;
+        }
+    }
+    @else if $media-width == min-md {
+        @media only screen and (min-width: $min-md) {
+            @content;
+        }
+    }
+    @else if $media-width == min-lg {
+        @media only screen and (min-width: $min-lg) {
+            @content;
+        }
+    }
+	@else if $media-width == min-sm_max-sm {
+		@media only screen and (min-width: $min-sm) and (max-width: $max-sm) {
+			@content;
+		}
+	}
+	@else if $media-width == min-sm_max-md {
+		@media only screen and (min-width: $min-sm) and (max-width: $max-md) {
+			@content;
+		}
+	}
+	@else if $media-width == min-sm_min-lg {
+		@media only screen and (min-width: $min-sm) and (max-width: $min-lg) {
+			@content;
+		}
+	}
+	@else if $media-width == min-md_min-lg {
+		@media only screen and (min-width: $min-md) and (max-width: $min-lg) {
+			@content;
+		}
+	}
+}
+

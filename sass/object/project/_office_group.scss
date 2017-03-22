@@ -1,0 +1,149 @@
+/* office group */
+
+// office group mragin
+.office {
+    &-box {
+        margin: {
+            bottom: 7rem;
+        }
+    }
+}
+
+.work {
+    &-title {
+        text-align: center;
+    }
+    &-main {
+        max-width: 550px;
+        max-height: 200px;
+    }
+    &-sub {
+        margin: {
+            bottom: 50px;
+        }
+    }
+}
+
+dl.group-office dt,
+dl.group-office dd {
+    @include media(min-sm) {
+        margin: {
+            bottom: .5em;
+        }
+        font: {
+            size: 1.25em
+        }
+    }
+}
+
+//  prefectures
+.prefectures {
+    margin: {
+        bottom: 5em;
+    }
+    th {
+        width: 5.75em;
+        background: #fbfbfb;
+        color: #252525;
+    }
+    td {
+        width: 5.5em;
+        a {
+            text-decoration: none;
+            @include media(max-xs) {
+                padding: {
+                    right: 3.75em;
+                }
+            }
+        }
+    }
+    th,
+    td {
+        padding: .5em;
+        @include font_size(500, 1.75);
+        @include media(max-xs) {
+            width: 9em;
+            @include font_size(400, 1.25);
+        }
+    }
+    &-column {
+        width: 90%;
+        margin: 0 auto;
+        @include media(max-xs) {
+            @include display-flex;
+            @include justify-center;
+        }
+    }
+    &-half {
+        &-column {
+            @include display-flex;
+            @include justify-between;
+            @include align-center;
+        }
+    }
+    &map {
+        img {
+            width: 700px;
+        }
+    }
+    @include prefectures(1, #f9ec55);
+    @include prefectures(2, #f7668f);
+    @include prefectures(3, #f7aa66);
+    @include prefectures(4, #d0d8cb);
+    @include prefectures(5, #62c6d1);
+    @include prefectures(6, #e2bce8);
+    @include prefectures(7, #9fd3ce);
+    @include prefectures(8, #74c469);
+}
+
+
+
+
+
+
+
+
+
+/* font layout */
+
+.f-size {
+    @include font_size(500, 2.25);
+    @include media(max-xs) {
+        @include font_size(500, 2);
+    }
+}
+
+
+/* office title layout*/
+
+.office {
+    &-text {
+        line-height: 1.8;
+    }
+    &-title {
+        @include display-flex;
+        @include align-end;
+        margin-top: 3em;
+        margin-bottom: 1.5em;
+        img {
+            width: 150px;
+            @include media(max-xs) {
+                width: 100px;
+            }
+        }
+        &-name {
+            p {
+                margin-bottom: 0;
+                margin-left: .5em;
+                line-height: 1;
+            }
+        }
+    }
+}
+
+
+/* mirai layout*/
+
+.mirai li {
+    line-height: 1.8;
+}

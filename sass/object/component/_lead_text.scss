@@ -1,0 +1,80 @@
+/* lead text */
+
+.lead {
+    &-box {
+        @include display-flex;
+        @include justify-center;
+        @include align-end;
+        @include media(max-xs) {
+            .lead-logo {
+                max-width: 12.5em;
+            }
+            img {
+                width: 12.5em;
+                padding: {
+                    bottom: 1em;
+                }
+            }
+            @include direction-column;
+            @include align-center;
+        }
+    }
+    &-text {
+        margin: {
+            left: .5em;
+        }
+        font: {
+            weight: 600;
+            size: 1.75em;
+        }
+        @include media(max-xs) {
+            font: {
+                weight: 400;
+                size: 1.5em;
+            }
+        }
+    }
+}
+
+.phone {
+    &-number {
+        @include display-flex;
+        @include justify-center;
+        @include media(max-xs) {
+            @include direction-column;
+            @include align-center;
+        }
+    }
+    &-text {
+        @include media(min-sm) {
+            &.tel {
+                margin: {
+                    right: .25em;
+                }
+            }
+            &.fax {
+                margin: {
+                    left: .25em;
+                }
+            }
+        }
+        @include font_size(500, 2);
+        line-height: 1.8;
+        @include media(max-xs) {
+            @include font_size(400, 1.5);
+        }
+    }
+}
+
+.address {
+    &-text {
+        font: {
+            size: 1.75em;
+        }
+        @include media(max-xs) {
+            font: {
+                size: 1.225em;
+            }
+        }
+    }
+}
