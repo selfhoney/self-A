@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/test.css">
+</head>
+
+<body>
+
+    <div class="wpcf7-form">
+        <div class="l-center">
+            <dl class="contact-form">
+                <dt>お名前<span class="required">※</span></dt>
+                <dd>[text* your-name placeholder akismet:author"例：大島　公一"]</dd>
+                <dt>フリガナ<span class="required">※</span></dt>
+                <dd>[text* rubi placeholder akismet:author"例：オオシマ　コウイチ"]</dd>
+                <dt>メールアドレス<span class="required">※</span></dt>
+                <dd>[email* your-email akismet:author_email akismet:author placeholder"例：example@co.jp"]</dd>
+                <dt>郵便番号</dt>
+                <dd>[text zip id:zip placeholder akismet:author"例：000-0000"]</dd>
+                <dt>都道府県</dt>
+                <dd>[text* pref id:pref placeholder akismet:author"例：東京都"]</dd>
+                <dt>ご住所</dt>
+                <dd class="address-100">[text addr id:addr placeholder akismet:author"例：港区南青山5-8-10 4階"]</dd>
+                <dt>お電話番号<span class="required">※</span></dt>
+                <dd>[tel* tel placeholder"例：03-5774-0505"]</dd>
+                <dt>メッセージ本文<span class="required">※</span></dt>
+                <dd class="message-100">[textarea* your-message akismet:author placeholder"お問い合わせ内容"]</dd>
+            </dl>
+        </div>
+    </div>
+        <p class="text-xs-center">[submit class:btn class:btn-success class:btn-lg "送信する"]</p>
+
+        <div class="read"><a href="">readmore</a></div>
+
+</body>
+
+</html>

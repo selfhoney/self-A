@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+    
+    <table class="table table-bordered table-striped table-contactform7">
+    <tr>
+        <th><span class="required-contactform7">必須</span><span class="title-contactform7">お名前</span></th>
+        <td>[Text* your-name akismet:author placeholder"例：大島　公一"] </td>
+    </tr>
+    <tr>
+        <th><span class="required-contactform7">必須</span><span class="title-contactform7">フリガナ</span></th>
+        <td>[Text* your-name akismet:author placeholder"例：オオシマ　コウイチ"] </td>
+    </tr>
+    <tr>
+        <th><span class="required-contactform7">必須</span><span class="title-contactform7">メールアドレス</span></th>
+        <td>[email* your-email akismet:author_email akismet:author placeholder"例：example@co.jp"]</td>
+    </tr>
+    <tr>
+        <th><span class="required-contactform7">必須</span><span class="title-contactform7">郵便番号</span></th>
+        <td>[Text* zip id:zip akismet:author placeholder"例：000-0000"] </td>
+    </tr>
+    <tr>
+        <th><span class="required-contactform7">必須</span><span class="title-contactform7">都道府県</span></th>
+        <td>[Text* pref id:pref akismet:author placeholder"例：東京都"]</td>
+    </tr>
+    <tr>
+        <th><span class="required-contactform7">必須</span><span class="title-contactform7">ご住所</span></th>
+        <td class="address-100">[Text* addr id:addr akismet:author placeholder"例：東京都港区南青山5-8-10 4階"]</td>
+    </tr>
+    <tr>
+        <th><span class="required-contactform7">必須</span><span class="title-contactform7">お電話番号</span></th>
+        <td>[Text* text-17 akismet:author placeholder"例：03-5774-0505"]</td>
+    </tr>
+    <tr>
+        <th><span class="required-contactform7">必須</span><span class="title-contactform7">メッセージ本文</span></th>
+        <td class="message-100">[textarea* your-message akismet:author placeholder"お問い合わせ内容"]</td>
+    </tr>
+</table>
+<p class="text-xs-center">[submit class:btn class:btn-success class:btn-lg "送信する"]</p>
+    
+    
+</body>
+</html>

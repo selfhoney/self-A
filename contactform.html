@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/test.css">
+</head>
+
+<body>
+    <div class="l-column">
+
+        <div>
+            お名前<span class="required">(必須)</span>
+        </div>
+        <div>[text* your-name akismet:author]</div>
+
+        <div>
+            ふりがな<span class="required">(必須)</span>
+        </div>
+        <div>[text* your-ruby akismet:author]</div>
+
+        <div>
+            メールアドレス<span class="required">(必須)</span>
+        </div>
+        <div>[email* your-email akismet:author_email]</div>
+
+        <div>
+            電話番号<span class="any">(任意)</span>
+        </div>
+        <div>[text tel-no akismet:author]</div>
+
+        <div>
+            郵便番号<span class="any">(任意)</span>
+        </div>
+        <div>[text zip id:zip akismet:author]</div>
+
+        <div>
+            住所<span class="any">(任意)</span>
+        </div>
+        <div>[text addr id:addr akismet:author]</div>
+
+        <div>
+            メッセージ本文<span class="required">(必須)</span>
+        </div>
+        <div>[textarea* your-message]</div>
+
+        <p>[submit "入力内容を送信する"]</p>
+
+    </div>
+
+
+    <div class="l-column">
+        <p>お名前 <span class="required">(必須)</span><br />
+        [text* your-name akismet:author]</p>
+
+        <p>ふりがな <span class="required">(必須)</span><br />
+        [text* your-ruby akismet:author]</p>
+
+        <p>電話番号<span class="any">(任意)</span><br />
+
+            [text tel-no 11/11 akismet:author]</p>
+
+        <p>メールアドレス <span class="required">(必須)</span><br /> [email* your-email akismet:author_email]</p>
+
+        <p>郵便番号<span class="any">(任意)</span><br />
+        [text zip id:zip 8/8 akismet:author]</p>
+
+        <p>住所<span class="any">(任意)</span><br />
+        [text pref id:pref akismet:author]</p>
+
+        <p>メッセージ本文<span class="required">(必須)</span><br />
+        [textarea* your-message ] </p>
+
+        <p>[submit "入力内容を送信する"]</p>
+    </div>
+
+</body>
+
+</html>
